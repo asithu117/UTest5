@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context=".ThereProfile">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="#fff"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/profilebg"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp">
+                </ImageView>
+                <LinearLayout
+                    android:id="@+id/linear"
+                    android:layout_marginTop="140dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+                    <RelativeLayout
+                        android:background="#80000000"
+                        android:layout_marginLeft="20dp"
+                        android:gravity="center"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp">
+                        <ImageView
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            app:srcCompat="@drawable/ic_add_image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"/>
+                        <ImageView
+                            android:id="@+id/profile_Image"
+                            android:scaleType="centerCrop"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            />
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/profile_Name"
+                            android:text="Name"
+                            android:textColor="#000"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="20dp"
+                            android:textSize="16sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+                        <TextView
+                            android:id="@+id/profile_Email"
+                            android:text="Email"
+                            android:textColor="#000"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="12sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+                        <TextView
+                            android:id="@+id/profile_Phone"
+                            android:text="Phone"
+                            android:textColor="#ff0000"
+                            android:textSize="12sp"
+                            android:layout_marginStart="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="@drawable/edt_background"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Address "
+                        android:textColor="#000"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/profile_Address"
+                        android:text="User Address"
+                        android:textSize="14sp"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Division "
+                        android:textColor="#000"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:text=":"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/profile_Division"
+                        android:text="User Division"
+                        android:textSize="14sp"
+                        android:paddingLeft="25dp"
+                        android:textColor="#000"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/currentUser_ProductRecy"
+                android:layout_below="@+id/linear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>

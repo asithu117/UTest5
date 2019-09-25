@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    tools:context=".SellerProductDetail">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_marginTop="490dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        app:srcCompat="@drawable/ic_edit_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPagerProduct"
+                android:layout_width="match_parent"
+                android:background="#fff"
+                android:layout_height="280dp"/>
+            <LinearLayout
+                android:id="@+id/productSliderDot"
+                android:orientation="horizontal"
+                android:layout_marginTop="265dp"
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/backProduct"
+                android:layout_width="wrap_content"
+                android:background="@drawable/backarrow1"
+                app:srcCompat="@drawable/backarrow"
+                android:layout_margin="20dp"
+                android:paddingTop="3dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/sMenuDetail"
+                android:layout_width="32dp"
+                android:background="@drawable/backarrow1"
+                app:srcCompat="@drawable/menu"
+                android:layout_margin="20dp"
+                android:layout_alignParentEnd="true"
+                android:paddingTop="3dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true" />
+            <LinearLayout
+                android:layout_marginTop="285dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Price :"
+                        android:textSize="16sp"
+                        android:textColor="#ff0000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:id="@+id/pPrice"
+                        android:text="1300ks"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#ff0000"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/pName"
+                    android:text="Computer"
+                    android:textSize="14sp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#ff0000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/pTime"
+                    android:text="33min"
+                    android:textSize="12sp"
+                    android:paddingBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/pDescription"
+                    android:text="Computer"
+                    android:textSize="12sp"
+                    android:layout_marginTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="265dp"
+                android:paddingRight="20dp"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:background="@drawable/prodcut_btn_background"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/products_Favourite"
+                        android:layout_width="20dp"
+                        app:srcCompat="@drawable/heart_button"
+                        android:layout_height="20dp"/>
+                </RelativeLayout>
+                <TextView
+                    android:id="@+id/products_FavouriteTv"
+                    android:text="1.2k Favourites"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/edt_background"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:text="Seller Information"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Name "
+                    android:textColor="#000"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/uName"
+                    android:text="User Name"
+                    android:paddingLeft="25dp"
+                    android:textSize="14sp"
+                    android:textColor="#000"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Address "
+                    android:textColor="#000"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/uAddress"
+                    android:text="User Address"
+                    android:textSize="14sp"
+                    android:paddingLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Division "
+                    android:textColor="#000"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/uDivision"
+                    android:text="User Division"
+                    android:textSize="14sp"
+                    android:paddingLeft="25dp"
+                    android:textColor="#000"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Contact Number "
+                    android:textColor="#000"
+                    android:textSize="16sp"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:text=":"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/uPhone"
+                    android:text="+959693931599"
+                    android:textSize="16sp"
+                    android:clickable="true"
+                    android:paddingLeft="25dp"
+                    android:textColor="#ff0000"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ebebeb"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:srcCompat="@drawable/ic_profile_black"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+            <com.blogspot.atifsoftwares.circularimageview.CircularImageView
+                android:id="@+id/comment_ProfileImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/comment_Edt"
+            android:layout_margin="1dp"
+            android:layout_toEndOf="@id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/relative"
+            android:background="#fff"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:textSize="12sp"
+            android:hint="Enter comment..."
+            android:layout_toStartOf="@+id/comment_Send"
+            tools:ignore="NotSibling"
+            android:layout_toLeftOf="@+id/comment_Send" />
+        <ImageButton
+            android:id="@+id/comment_Send"
+            android:layout_width="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_send_button"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

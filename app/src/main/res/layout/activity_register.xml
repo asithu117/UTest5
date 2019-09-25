@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/card_background"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Register"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:textColor="#ffff"
+            android:background="@drawable/title_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinnerCountry"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/edtPhoneNum"
+                android:hint="Enter phone number"
+                android:textSize="14sp"
+                android:textColorHint="#000"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="5dp"
+                android:digits="0123456789"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edtSMS"
+                android:hint="SMS code"
+                android:textSize="14sp"
+                android:textColorHint="#000"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/btnSend"
+                android:text="SEND"
+                android:textSize="10sp"
+                android:textColor="#ff1100"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_width="50dp"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_Pregister"
+            android:layout_width="match_parent"
+            android:text="Next"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_background"
+            android:layout_height="35dp" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txt_Login"
+        android:textAlignment="center"
+        android:paddingRight="5dp"
+        android:text="Go Back Login"
+        android:clickable="true"
+        android:onClick="txtLogin"
+        android:textColor="#0037ff"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.core.widget.ContentLoadingProgressBar
+        android:layout_below="@+id/txtView"
+        android:id="@+id/progressbar"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

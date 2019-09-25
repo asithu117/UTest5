@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_marginTop="130dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_background"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinnerDivision"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edt_fName"
+                android:hint="First Name"
+                android:textColorHint="#000"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edt_sName"
+                android:hint="Last Name"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textColorHint="#000"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Email"
+            android:hint="Enter your email"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_Address"
+            android:hint="Enter your address"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:textColorHint="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/edt_Password"
+            android:hint="Enter your password"
+            android:textSize="14sp"
+            android:textColorHint="#000"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_cPassword"
+            android:hint="Enter your confirm password"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:textColorHint="#000"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_Register"
+            android:layout_width="match_parent"
+            android:text="Register"
+            android:textSize="16sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/button_background"
+            android:layout_height="35dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

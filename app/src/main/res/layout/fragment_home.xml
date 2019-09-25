@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eded"
+    tools:context=".HomeFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"/>
+        <LinearLayout
+            android:id="@+id/sliderDot"
+            android:orientation="horizontal"
+            android:layout_marginTop="175dp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_height="wrap_content">
+
+
+        </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/product_RcyView"
+       android:layout_below="@+id/viewPager"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"/>
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>
+
